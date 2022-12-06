@@ -1,3 +1,30 @@
+:root {
+  --theme-color: #ffadad !important;
+	--blue-custom: #5ea6e5;
+	--hl-bg: #282c34;
+	--loading-color: rgba(207, 246, 247, 0.92);
+	--border-color: #c9c9c9;
+	--color-red: rgb(241, 71, 71);
+	--color-orange: rgb(241, 162, 71);
+	--color-yellow: rgb(241, 238, 71);
+	--color-purple: rgb(179, 71, 241);
+	--color-blue: rgb(102, 204, 255);
+	--color-gray: rgb(226, 226, 226);
+	--color-green: rgb(57, 197, 187);
+	--color-whitegray: rgb(241, 241, 241);
+	--color-pink: rgb(237, 112, 155);
+	--color-black: rgb(0, 0, 0);
+	--color-darkblue: rgb(97, 100, 159);
+	--color-heoblue: rgb(66, 90, 239);
+	--btn-bg: var(--theme-color);
+	--scrollbar-color: var(--theme-color);
+	--border-style: 1px solid rgba(169, 169, 169, 0.7)
+}
+
+  [data-theme="dark"] {
+    --theme-color: rgb(94, 166, 229) !important;
+  }
+  
   /* 页脚与头图透明 */
   #footer {
     background: transparent !important;
@@ -20,4 +47,75 @@
   }
   [data-theme="dark"] #page-header::before {
     background: transparent !important;
+  }
+
+  /* 小冰分类分类磁铁黑夜模式适配 */
+  /* 一般状态 */
+  [data-theme="dark"] .magnet_link_context {
+    border-radius: 6px;
+    background: #1e1e1e;
+    color: antiquewhite;
+  }
+  /* 鼠标悬浮状态 */
+  [data-theme="dark"] .magnet_link_context:hover {
+    background: rgb(94, 166, 229);
+    color: #f2f2f2;
+  }
+
+  #aside-content>.card-widget.card-info>#card-info-btn {
+    background-color: var(--theme-color);
+    border-radius: 8px;
+  }
+
+  [data-theme="dark"] #aside-content>.card-widget.card-info>#card-info-btn {
+    border-radius: 8px;
+  }
+
+  @font-face {
+    /* 为载入的字体取名字(随意) */
+    font-family: 'YSHST';	
+    /* 字体文件地址(相对或者绝对路径都可以) */
+    src: url(/static/font/优设好身体.woff2);
+    /* 定义加粗样式(加粗多少) */
+    font-weight: normal;
+    /* 定义字体样式(斜体/非斜体) */
+    font-style: normal;
+    /* 定义显示样式 */
+    font-display: block;
+  }
+  
+  @font-face {
+    font-family: MiSans;
+    src: url(/static/font/MiSans.woff2);
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: HYTMR;
+    src: url(/static/font/HYTangMeiRen55W.woff2);
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: LXGW;
+    src: url(/static/font/霞鹜文楷.woff2);
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: TTQHB;
+    src: url(/static/font/甜甜圈海报字体.woff2);
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: Consolas_1;
+    src: url(/static/font/Consolas.woff2);
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: ZhuZiAWan_light;
+    src: url(/static/font/ZhuZiAWan2.woff2);
+    font-display: swap
   }
